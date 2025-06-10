@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const eventRoutes = require('./routes/eventRoutes');
 const path = require('path');
+const cors = require('cors');
 dotenv.config();
 const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
@@ -10,6 +11,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 app.use(express.json());
+app.use(cors());
 
 // Routes
 app.use('/events', eventRoutes);
