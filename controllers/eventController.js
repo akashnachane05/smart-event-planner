@@ -3,7 +3,12 @@ const { getWeatherForecast, kelvinToCelsius } = require('../services/weatherServ
 const { scoreWeather } = require('../utils/weatherScoring');
 
 // Create Event
-exports.createEvent = async (req, res) => {
+exports.createEvent = async (req, res) => { // add check for already exi
+// Check if event already exists
+  const existingEvent = await Event.find({ name: req.body.name, date: req.body.date });
+  if (existingEvent.length > 0) {
+    return res.status(400).json({ message: 'Event already exists for this date' });
+  }
   try {
     const { name, location, date, eventType } = req.body;
     const newEvent = new Event({ name, location, date, eventType });
