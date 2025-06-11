@@ -1,9 +1,6 @@
-# 🌤️ Smart Event Planner – DevDynamics Internship Assignment
-
+# 🌤️ Smart Event Planner 
 A full-stack Node.js application that allows users to plan events, fetch weather forecasts, analyze weather suitability based on event type, and get personalized recommendations.
-
 Built for the **DevDynamics Internship Assessment**. It integrates external APIs like **OpenWeatherMap** and **Google Places**, supports caching, and includes a simple HTML+Bootstrap frontend.
-
 ---
 
 ## 🌐 Live Demo
