@@ -13,7 +13,7 @@ Built for the **DevDynamics Internship Assessment**. It integrates external APIs
 ---
 
 ## 🧪 Postman Collection
-🔗 [Public Gist Link](https://gist.github.com/akashnachane05/edd11ebbefb23e1ccf00f75364eb063a.js)
+🔗 [Public Gist Link](https://gist.github.com/akashnachane05/edd11ebbefb23e1ccf00f75364eb063a)
 
 ## 🚀 Features
 
